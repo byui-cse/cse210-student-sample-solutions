@@ -38,6 +38,7 @@ class Program
 
         return number;
     }
+    
     static void PromptUserBirthYear(out int birthYear)
     {
         Console.Write($"Please enter the year you were born: ");

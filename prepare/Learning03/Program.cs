@@ -19,5 +19,18 @@ class Program
         Fraction f4 = new Fraction(1, 3);
         Console.WriteLine(f4.GetFractionString());
         Console.WriteLine(f4.GetDecimalValue());
+
+        Random random= new Random();
+        Fraction f5 = new Fraction();
+        for (int i = 0; i < 20; i++)
+        {
+            int topValue = random.Next(1, 11);
+            int bottomValue = random.Next(1, 11);
+            f5.SetTop(topValue);
+            f5.SetBottom(bottomValue);
+            Console.Write($"Fraction {i + 1}: ");
+            Console.Write($"string: {f5.GetFractionString()}");
+            Console.WriteLine($" Number: {f5.GetDecimalValue()}");
+        }
     }
 }
